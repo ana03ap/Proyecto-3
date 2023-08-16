@@ -1,0 +1,38 @@
+/* css solo de las cartas, info sacada de la api */
+.cards{
+    height: 14pc;
+    background-color: #232323;
+    margin: 1pc;
+    display: flex;
+    padding: 1pc;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.image{
+    height: 10pc;
+    width: 10pc;
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.5pc;
+}
+.cards_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.nombre_img{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+#root{
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}

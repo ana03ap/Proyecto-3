@@ -2,138 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rick-And-Morty</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="shortcut icon" href="img/Rick-logo.svg" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700&display=swap" rel="stylesheet" />
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/stylesapi.css">
+    <link rel="shortcut icon" href="/img/Rick-logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <title>Ricky and Morty</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="./img/logo-Nav.svg" alt="" style="width: 3pc" />
-                <span>Rick And Morty</span>
+    <header class="header">
+        <nav >
+            <div id="izquierdaHeader">
+                <div class="imgHeader">
+                    <img src="/img/logo-Nav.svg" alt="logo Ricky and Morty">
+                </div>
+
+                <h4 id="titleRicky">Ricky and Morty</h4>
             </div>
-            <ul class="barraNav">
-                <li id="mode">Mode</li>
-            </ul>
+            <button id="mode">Mode</button>
         </nav>
     </header>
 
 
-    <main>
-        <section id="mensaje">
-            <h1>¿ What will we use in this project ?</h1>
-            <div>
+
+    <main class="hero">
+        <section class="message">
+            <h1>What will we use in this project?</h1>
+            <div class="languages">
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JAVASCRIPT</p>
             </div>
-            <a href="#one">
-                <!-- <i
-        class="bx bx-down-arrow-alt bx-fade-up ko"
-        style="font-size: 10pc"
-        ></i> -->
-            </a>
+            <div class="arrow">
+                <i class="bx bx-down-arrow-alt bx-fade-up ko"></i>
+            </div>
         </section>
 
-        <section id="uno">
-            <div class="izquierda">
-                <h2>
-                    We will use JavaScript to change the theme of the page (light -
-                    dark)
-                </h2>
-                <div>
-                    <p>
-                        <b>Element Selection:</b> Use methods like
-                        <b>document.getElementById</b>, <b>document.querySelector</b>, or
-                        <b>document.querySelectorAll</b> to select the HTML elements you
-                        want to modify in response to the theme change.
-                    </p>
-                    <br />
-                    <b>Change Event:</b> Assign an event, such as clicking a button or
-                    changing a setting, that will trigger the theme change.
-                    <br />
-                    <br />
-                    <b>Modify Classes or Styles: </b> Define different sets of CSS
-                    styling rules for the light and dark theme. You can change the
-                    classes of the elements using element.classList or modify the styles
-                    directly with JavaScript using element.style . Alternatively, you
-                    can add classes to the <b>body</b> or other parent elements and
-                    define styles based on these classes.
+
+
+        <section class="element">
+            <!-- texto -->
+            <div class="contenido">
+                <h1>We will use JavaScript to change the theme of the page (light - dark)</h1>
+                <p><strong>Element Selection:</strong> Use methods like <strong>document.getElementById,
+                        document.querySelector,</strong> or <strong>document.querySelectorAll </strong>to select the
+                    HTML elements you want to modify in response to the theme change.</p>
+                <p><strong>Change Event:</strong> Assign an event, such as clicking a button or changing a setting, that
+                    will trigger the theme change.
+                </p>
+                <p><strong>Modify Classes or Styles:</strong> Define different sets of CSS styling rules for the light
+                    and dark theme.
+                    You can change the classes of the elements using element.classList or modify the styles directly
+                    with JavaScript using element.style . Alternatively, you can add classes to the
+                    <strong>body</strong> or other parent elements and define styles based on these classes.
+                </p>
+
+            </div>
+
+            <!-- imagen -->
+            <div class="imageElement">
+                <div class="imageContainer img_uno" >
+                    <img  data-aos="fade-left" src="https://github.com/Mp-keyner/Rick/blob/main/img/document.png?raw=true" alt="">
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="element">
+
+            <div class="imageElement">
+                <div class="imageContainer img_dos">
+                    <img data-aos="fade-right" src="https://github.com/Mp-keyner/Rick/blob/main/img/fetch.png?raw=true" alt="">
                 </div>
             </div>
-            <div class="derecha">
-                <img src="https://mp-keyner.github.io/Rick/img/document.png" style="width: 80%; object-fit: cover" />
-            </div>
-        </section>
 
-        <section id="dos">
-
-
-            <div class="derecha">
-                <img src="https://mp-keyner.github.io/Rick/img/fetch.png" style="width: 80%; object-fit: cover" />
-            </div>
-
-            <div class="izquierda">
-                <h2 style="text-align: center">
-                    we will use Fetch to get all the information about an API
-                </h2>
-                <p>
-                    By using the <b>Fetch</b> method, we enter the world of
-                    communications between web applications, making it possible to
-                    obtain complete data from an API.
-                    <br />
-                    <br />
-                    This action, essential in development and programming, triggers a
-                    sequence of steps that involves requesting, waiting for, and
-                    receiving data, culminating in the possibility of exhaustive
-                    analysis and the subsequent materialization of results. All this,
-                    framed in a dynamic context where information flows without borders,
-                    ready to be discovered and used.
+            <div class="contenido fetch">
+                <h1>We will use Fetch to get all the information about an API</h1>
+                <p>By using the <strong>Fetch</strong> method, we enter the world of communications between web
+                    applications, making it possible to obtain complete data from an API.
+                </p>
+                <p>This action, essential in development and programming, triggers a sequence of steps that involves
+                    requesting, waiting for, and receiving data, culminating in the possibility of exhaustive analysis
+                    and the subsequent materialization of results. All this, framed in a dynamic context where
+                    information flows without borders, ready to be discovered and used.
                 </p>
             </div>
         </section>
 
-        <section id="tres">
-            <div class="izquierda">
-                <h2 style="text-align: center">
-                    we will use functions, string handling and API interaction
-                </h2>
-                <p>
-                    In this project, we will learn to create a browser using JavaScript,
-                    where we will apply essential concepts for web development. We'll
-                    use <b>functions</b> to handle the search logic, allowing us to
-                    search and filter data in a list. In addition, we will use string
-                    management <b>techniques</b> to compare and analyze user input,
-                    ensuring an accurate and efficient search.
-                    <br />
-                    <br />
-                    To take our search engine to the next level, we'll explore how to
-                    interact with APIs, allowing us to pull data online to display fresh
-                    and relevant results. We will learn how to use the
-                    <b>fetch</b> function to make requests to an API and process the
-                    responses received.
+
+
+        <section class="element">
+            <div class="contenido">
+                <h1>We will use functions, string handling and API interaction</h1>
+                <p>In this project, we will learn to create a browser using JavaScript, where we will apply essential
+                    concepts for web development. We'll use <strong>functions</strong> to handle the search logic,
+                    allowing us to search and filter data in a list. In addition, we will use string management
+                    <strong>techniques</strong> to compare and analyze user input, ensuring an accurate and efficient
+                    search.
+                </p>
+                <p>To take our search engine to the next level, we'll explore how to interact with APIs, allowing us to
+                    pull data online to display fresh and relevant results. We will learn how to use the
+                    <strong>fetch</strong> function to make requests to an API and process the responses received.
                 </p>
             </div>
-            <div class="derecha">
-                <img src="https://mp-keyner.github.io/Rick/img/search.png" data-aos="fade-left" alt=""
-                    style="width: 80%; object-fit: cover" data-aos-out="fade-left" />
+
+
+            <div class="imageElement">
+                <div class="imageContainer img_tres">
+                    <img data-aos="fade-left" src="https://github.com/Mp-keyner/Rick/blob/main/img/search.png?raw=true" alt="">
+                </div>
+
             </div>
         </section>
 
-      
 
+        <section class="search">
+            <div class="containerSearch">
+                
+                <!-- <div class="primerGrupo">
+                    <div class="imageHContainer">
+                        <img src="/img/logo-Nav.svg" alt="logo Ricky and Morty">
+                    </div>
+
+                    <h4 id="titleRicky">Ricky and Morty</h4>
+                </div>
+                <div class="searchCharacters">
+                    <input type="search" placeholder="search character...">
+                    <button>Search</button>
+
+                    
+
+                </div> -->
+                
+
+                <div id="root"></div>
+
+            </div>
+        </section>
     </main>
-
+    <footer></footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

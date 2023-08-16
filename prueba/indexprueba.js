@@ -1,28 +1,7 @@
-// para la api de rick morty
 const url = "https://rickandmortyapi.com/api/character";
 const main = document.getElementById("root");
 
-// para cambiar el modo de la pagina 
-const root = document.documentElement;
-const btn = document.getElementById("mode")
-let sw= false
-
-btn.addEventListener("click",()=>{
-    if(sw){
-        root.style.setProperty('--bg-body','#000');
-        root.style.setProperty('--color-text','#fff');
-        sw= false;
-    }else{
-        root.style.setProperty('--bg-body','#fff');
-        root.style.setProperty('--color-text','#000');
-        sw= true
-    }
-})
-// cuando se de click a el boton mode se cambia a modo oscuro 
-// btn.addEventListener("click",()=>{
-//     root.style.setProperty('--bg-body', '#000')
-//     root.style.setProperty('--color-text', '#fff')
-// })
+// const imagen = document.getElementById("imagen");
 
 fetch(url)
 .then((response) => {
