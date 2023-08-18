@@ -2,7 +2,7 @@
 .cards{
     height: 14pc;
     background-color: #232323;
-    margin: 1pc;
+    margin: 0.5pc;
     display: flex;
     padding: 1pc;
     justify-content: space-around;
@@ -27,8 +27,8 @@
 .nombre_img{
     display: flex;
     flex-direction: column;
-    gap: 0;
 }
+
 #root{
     /* background-color: black; */
     display: grid;
@@ -36,3 +36,4 @@
     font-family: 'Courier New', Courier, monospace;
     color:white;
 }
+

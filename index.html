@@ -40,7 +40,7 @@
                 <p>CSS</p>
                 <p>JAVASCRIPT</p>
             </div>
-            <div class="arrow">
+            <div id="arrow-down">
                 <i class="bx bx-down-arrow-alt bx-fade-up ko"></i>
             </div>
         </section>
@@ -125,31 +125,47 @@
         </section>
 
 
-        <section class="search">
-            <div class="containerSearch">
-                
-                <!-- <div class="primerGrupo">
-                    <div class="imageHContainer">
+        <!-- <section class="search"> -->
+        <section id="search">
+            
+            <div id="container-buscador">
+                <div id="izquierda-buscador">
+                    <div id="imagen-buscador">
                         <img src="/img/logo-Nav.svg" alt="logo Ricky and Morty">
                     </div>
 
+                    <h4 id="titulo-buscador">Ricky and Morty</h4>
+                </div>
+
+                <div id="input-buscador">
+                    <input type="search" placeholder="search character..." id="input-a-buscar">
+                    <button id="buscar">Search</button>
+            </div>
+            </div>
+            
+            <div id="root"></div>
+
+            <div id="botones">
+                <button id="beforeBtn">&lt;</button>
+                <button id="afterBtn">&gt;</button>
+            </div>
+
+        </section>
+        <!-- </section> -->
+    </main>
+    <footer>
+            <nav >
+                <div id="izquierdaHeader">
+                    <div class="imgHeader">
+                        <img src="/img/logo-Nav.svg" alt="logo Ricky and Morty">
+                    </div>
+    
                     <h4 id="titleRicky">Ricky and Morty</h4>
                 </div>
-                <div class="searchCharacters">
-                    <input type="search" placeholder="search character...">
-                    <button>Search</button>
+                <div id="arrow-up"><i class='bx bx-up-arrow-alt'></i></div>
+            </nav>
 
-                    
-
-                </div> -->
-                
-
-                <div id="root"></div>
-
-            </div>
-        </section>
-    </main>
-    <footer></footer>
+    </footer>
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

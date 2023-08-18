@@ -23,7 +23,7 @@ body {
 
 /*HEADER CSS */
 
-.header {
+.header, footer {
     background-color: #3ab54a;
     padding: 2px;
 }
@@ -79,18 +79,13 @@ nav {
     font-weight: 800;
     text-align: center;
     font-size: 96px;
-    /* color: var(--secondary-color);  */
-    /*cambia dependiendo de modo*/
 }
 
 .languages {
     display: flex;
     justify-content: center;
-    /* color: var(--secondary-color);  */
-    /*cambia dependiendo de modo*/
     margin: 2pc 0 2pc 0;
 }
-
 
 .languages p {
     margin-right: 1pc;
@@ -100,16 +95,14 @@ nav {
 }
 
 /*CSS flecha */
-.arrow {
+#arrow-down {
     display: flex;
     justify-content: center;
     margin-bottom: 2pc;
 }
 
-.arrow i {
+#arrow-down  {
     cursor: pointer;
-    /* color: var(--secondary-color);  */
-    /*cambia dependiendo de modo*/
     font-size: 10pc
 }
 
@@ -133,12 +126,10 @@ nav {
     font-family: 'Tektur', cursive;
     font-weight: 900;
     margin-bottom: 2pc;
-    /* color: var(--secondary-color); */
 }
 
 .contenido p {
     margin-bottom: 12px;
-    /* color: var(--secondary-color); */
 }
 
 .imageElement {
@@ -178,14 +169,66 @@ nav {
 }
 
 
-.search {
-    /* background-color: #3ab54a;  */
-    padding: 2px;
-}
 
-.containerSearch {
+
+#container-buscador {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #3ab54a;
+    padding: 2px;
+    margin-bottom: 2pc;
 }
 
+#izquierda-buscador {
+    display: flex;
+    align-items: center;
+    margin-left: 2pc;
+}
+
+#imagen-buscador{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+#imagen-buscador img {
+    width: 100%;
+    height: 100%;
+}
+
+#titulo-buscador {
+    font-weight: 200;
+}
+
+#input-buscador {
+    border: none;
+    margin-right: 2pc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 200;
+    /* color: var(--secondary-color); */
+}
+
+#root{
+    margin: 32px;
+}
+/* contenedor del buscador css */
+
+#botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+    padding-bottom: 1pc;
+}
+
+#beforeBtn, #afterBtn{
+    width: 2pc;
+    height: 2pc;
+}
+
+#arrow-up{
+    font-size: 3pc;
+    cursor: pointer;
+}
