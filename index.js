@@ -19,12 +19,8 @@ const btnAfter= document.getElementById("afterBtn")
 
 // para numero de pagi
 let numPagina=1
-const buscar = getElementById('buscar')
-const input =getElementById('input-a-buscar')
-buscar.addEventListener('click',()=>{
-    input.value
-    
-})
+// const buscar = getElementById('buscar')
+
 
 
 
