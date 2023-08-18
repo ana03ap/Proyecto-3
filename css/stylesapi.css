@@ -1,6 +1,6 @@
 /* css solo de las cartas, info sacada de la api */
 .cards{
-    height: 14pc;
+    /* height: 14pc; */
     background-color: #232323;
     margin: 0.5pc;
     display: flex;
