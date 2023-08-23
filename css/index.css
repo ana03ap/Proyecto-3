@@ -232,3 +232,8 @@ nav {
     font-size: 3pc;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 500px ) {
+    
+}
