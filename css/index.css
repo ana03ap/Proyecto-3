@@ -69,7 +69,7 @@ nav {
 
 /*CSS PRIMER MENSAJE */
 .message {
-    height: 90vh;
+    /* height: 90vh; */
     width: 100%;
 }
 
@@ -110,7 +110,9 @@ nav {
 /*cambia dependiendo de modo*/
 .element {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
+    gap: 1pc;
+    margin:3pc 0;
 }
 
 .contenido {
@@ -234,6 +236,42 @@ nav {
 }
 
 
-@media screen and (max-width: 500px ) {
-    
+@media screen and (max-width: 800px ) {
+    .element{
+        flex-direction: column;
+        align-items: center;
+        padding: 1pc;
+        height: auto;
+        gap: 1pc;
+        margin:1pc 0;
+    }
+    .element:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .element div{
+        width: 100%;
+        margin: 0;
+    }
+    #root{
+        grid-template-columns: 1fr;
+    }
+    .message h1{
+        font-size: 4pc;
+    }
+    .message p{
+        font-size: 1.5pc;
+    }
+    #titulo-buscador{
+        display: none;
+    }
+    #input-buscar input{
+        padding: 0.4pc;
+        border-radius: 6px;
+        border:none;
+    }
+    #arrow-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
