@@ -236,6 +236,46 @@ nav {
 }
 
 
+/* css solo de las cartas, info sacada de la api */
+.cards{
+    /* height: 14pc; */
+    background-color: #232323;
+    margin: 0.5pc;
+    display: flex;
+    padding: 1pc;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.image{
+    height: 10pc;
+    width: 10pc;
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.5pc;
+}
+.cards_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.nombre_img{
+    display: flex;
+    flex-direction: column;
+}
+
+#root{
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+
+
 @media screen and (max-width: 800px ) {
     .element{
         flex-direction: column;
@@ -254,6 +294,50 @@ nav {
     }
     #root{
         grid-template-columns: 1fr;
+    }
+    .message h1{
+        font-size: 4pc;
+    }
+    .message p{
+        font-size: 1.5pc;
+    }
+    #titulo-buscador{
+        display: none;
+    }
+    #input-buscar input{
+        padding: 0.4pc;
+        border-radius: 6px;
+        border:none;
+    }
+    #arrow-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 1057px ) {
+    #root{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 800px ) {
+    .element{
+        flex-direction: column;
+        align-items: center;
+        padding: 1pc;
+        height: auto;
+        gap: 1pc;
+        margin:1pc 0;
+    }
+    .element:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .element div{
+        width: 100%;
+        margin: 0;
     }
     .message h1{
         font-size: 4pc;
